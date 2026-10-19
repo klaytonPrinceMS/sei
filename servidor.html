@@ -70,9 +70,11 @@
         <li><b>Como pedir.</b> Solicitação formal por <b>memorando da unidade de lotação</b> do servidor.</li>
         <li><b>Quem assina.</b> O memorando precisa ser <b>assinado no SEI pelo(a) Secretário(a)</b> ou chefia responsável.</li>
         <li><b>Troca de unidade.</b> Mudança de lotação ou ajuste de acessos = novo memorando.</li>
+        <li><b>Vale para todos.</b> Efetivos, comissionados, contratados e estagiários seguem o mesmo procedimento.</li>
         <li><b>Dados obrigatórios:</b> nome completo, CPF, e-mail institucional, celular e unidade/sigla de lotação.</li>
         <li><b>Sem acesso ao SEI?</b> Peça a um superior que já tenha acesso para encaminhar.</li>
-        <li><b>Envie o número do processo</b> ao setor responsável após protocolar o pedido — não mande documentos soltos.</li>
+        <li><b>Não mande documentos soltos.</b> Abra um <b>novo processo</b> com o pedido e envie o <b>número do processo</b> ao setor responsável — documentos avulsos dificultam o acompanhamento.</li>
+        <li><b>Sigla errada ou unidade nova?</b> Use sempre a sigla oficial (ver <a href="sistema.html#unidades">Sistema → Unidades</a>). Se a sua unidade não está na lista, peça a inclusão/atualização à gestão <b>antes</b> de protocolar.</li>
       </ol>
       <div class="tip">💡 Envie CPF e dados pessoais somente dentro do SEI, nunca em grupos ou mensagens abertas.</div>
       <div class="tip">📞 Dúvidas sobre o pedido? Gestão do SEI: <a href="mailto:sei@montesantodeminas.mg.gov.br">sei@montesantodeminas.mg.gov.br</a> · <a href="tel:+553535915128">(35) 3591-5128</a> (Klayton Prince).</div>
@@ -102,6 +104,20 @@ Atenciosamente,
       <div class="row"><button class="btn" id="btnCopiarMem" type="button">📋 Copiar texto</button><span class="muted" id="memMsg"></span></div>
     </details>
     <p class="tip">Com o acesso em mãos, siga para <a href="aprender.html#jornada">Aprender → jornada do zero ao envio</a>.</p>
+  </section>
+
+  <section id="conferir-pedido" class="bloco">
+    <h2>Seu pedido está pronto?</h2>
+    <p>Confira os itens antes de protocolar — pedido incompleto volta e atrasa a liberação.</p>
+    <div class="bar"><i id="pbPed"></i></div>
+    <p class="muted" id="pbPedTxt">0 de 5 conferidos</p>
+    <div class="ck" id="ckPed">
+      <label><input type="checkbox"> Memorando feito pela unidade de lotação, com todos os dados (nome, CPF, e-mail, celular, sigla)</label>
+      <label><input type="checkbox"> Memorando assinado no SEI pelo(a) Secretário(a) ou chefia responsável</label>
+      <label><input type="checkbox"> Sigla da unidade confere com a lista oficial (<a href="sistema.html#unidades">Sistema → Unidades</a>)</label>
+      <label><input type="checkbox"> Processo aberto (sem documentos soltos) e número enviado ao setor responsável</label>
+      <label><input type="checkbox"> CPF e dados pessoais enviados só dentro do SEI, nunca em mensagens abertas</label>
+    </div>
   </section>
 
   <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>

@@ -111,6 +111,26 @@ if(has("ckList")){
   pinta();
 }
 
+/* ---------- Checklist do pedido de acesso (servidor) ---------- */
+if(has("ckPed")){
+  const inputs = $$("#ckPed input"), bar = byId("pbPed"), txt = byId("pbPedTxt");
+  let estado = [];
+  try{ estado = JSON.parse(localStorage.getItem("sei-msm-pedido") || "[]"); }catch(e){}
+  const pinta = () => {
+    const n = inputs.filter(x => x.checked).length;
+    bar.style.width = (n/inputs.length*100) + "%";
+    txt.textContent = `${n} de ${inputs.length} conferidos`;
+  };
+  inputs.forEach((c, i) => {
+    if(estado[i]) c.checked = true;
+    c.addEventListener("change", () => {
+      try{ localStorage.setItem("sei-msm-pedido", JSON.stringify(inputs.map(x => x.checked ? 1 : 0))); }catch(e){}
+      pinta();
+    });
+  });
+  pinta();
+}
+
 /* ---------- Ícones (referência) ---------- */
 const ICONES = [
   ["📁→","Enviar processo","Remete o processo a outra unidade."],

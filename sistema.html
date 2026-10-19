@@ -55,22 +55,45 @@
       <div class="card"><div class="ic">📥</div><h3>Recebidos x Gerados</h3><p>Recebidos = os que chegaram para a sua unidade. Gerados = os que a sua unidade criou.</p></div>
       <div class="card"><div class="ic">👤</div><h3>Atribuição</h3><p>Marque quem é o responsável pelo processo dentro da unidade.</p></div>
     </div>
+    <div class="tip">💡 Com a extensão <b>SEI Pro</b>, o menu vira uma lista suspensa e aparecem ícones coloridos no topo. Sem ela, o SEI mostra o menu fixo na lateral — os nomes e funções são os mesmos (<a href="#pro">ver SEI Pro</a>).</div>
   </section>
 
   <section id="pro" class="bloco">
     <h2>Extensão SEI Pro (Chrome)</h2>
     <div class="warn">⚠️ O SEI Pro <b>não é oficial</b> do SEI nem da Prefeitura. Só muda o visual no <b>seu</b> navegador. Antes de instalar em PC da Prefeitura, fale com a TI.</div>
+    <p>Além do visual, ela adiciona funções úteis: <b>favoritos</b>, <b>controle de prazos</b>, <b>modo noturno</b>, <b>comparador de documentos</b>, <b>ações em lote</b> e atalhos extras.</p>
     <ol class="steps static">
       <li>Abra a <b>Chrome Web Store</b> e pesquise <b>SEI Pro</b>.</li>
       <li>Clique em <b>Usar no Chrome</b> e confirme.</li>
       <li>Fixe o ícone na barra do navegador e entre no SEI.</li>
       <li>Atualize (F5) e abra as <b>Configurações do SEI Pro</b> para ativar só o que precisa.</li>
+      <li>Clique em <b>Salvar</b> para gravar as mudanças.</li>
     </ol>
+    <details>
+      <summary><b>Botões da janela de configurações</b></summary>
+      <ul>
+        <li><b>Baixar</b> — salva suas configurações em arquivo (backup).</li>
+        <li><b>Carregar</b> — restaura esse arquivo (útil em outro computador).</li>
+        <li><b>Ferramentas</b> — abre recursos extras da extensão.</li>
+        <li><b>Salvar</b> — grava as mudanças.</li>
+      </ul>
+    </details>
+  </section>
+
+  <section id="mapeamento" class="bloco">
+    <h2>Mapeamento de tipo de processo</h2>
+    <p>Quando um trabalho ainda é feito no papel ou um tipo novo é necessário, a unidade pede o <b>mapeamento e cadastro do tipo de processo</b> no SEI. Não crie tipos por conta própria.</p>
+    <div class="grid cards-3">
+      <div class="card"><div class="ic">🔄</div><h3>Migração físico → eletrônico</h3><p>Todo processo físico deve migrar para o eletrônico. Exige adaptação aos trâmites digitais e preenchimento rigoroso dos formulários.</p></div>
+      <div class="card"><div class="ic">💳</div><h3>Pagamentos</h3><p>O SEI tem limitações para lidar com transações financeiras e integrações com sistemas de arrecadação. Preveja um <b>canal de comunicação</b> para acompanhar pagamentos.</p></div>
+      <div class="card"><div class="ic">📜</div><h3>Base normativa</h3><p>Os tipos de processo precisam de respaldo em <b>ato municipal</b> que regulamente o SEI na Prefeitura e consolide a obrigatoriedade do formato eletrônico.</p></div>
+    </div>
+    <div class="tip">📝 Precisa de um tipo novo? Formalize com um <b>memorando da sua unidade</b> descrevendo o fluxo (etapas, responsáveis, documentos, prazos) e envie à <b>gestão do SEI</b>: <a href="mailto:sei@montesantodeminas.mg.gov.br">sei@montesantodeminas.mg.gov.br</a> · <a href="tel:+553535915128">(35) 3591-5128</a>.</div>
   </section>
 
   <section id="tipos" class="bloco">
     <h2>Tipos de processo — exemplos comuns</h2>
-    <p>Lista de referência baseada em municípios que já usam o SEI. A tabela oficial de Monte Santo de Minas é definida pela gestão local — confirme antes de mapear um tipo novo.</p>
+    <p>A tabela oficial de Monte Santo de Minas (tipos em uso e unidades mais frequentes) é definida pela <b>gestão do SEI</b>. A lista abaixo é de referência, baseada em municípios que já usam o SEI. Se o tipo que você precisa não está aqui, peça o <b>mapeamento</b> (<a href="#mapeamento">ver acima</a>) em vez de improvisar.</p>
     <input class="fi" id="fTip" type="search" placeholder="Filtrar: ofício, férias, contrato…">
     <div class="tw"><table id="tabTip">
       <thead><tr><th>Tipo de processo</th><th>Serve para</th><th>Acesso sugerido</th></tr></thead>
@@ -80,12 +103,18 @@
 
   <section id="unidades" class="bloco">
     <h2>Unidades e siglas — modelo</h2>
-    <p>Use a sigla exatamente como cadastrada. Toque para copiar. <b>Tabela-modelo</b>: peça à gestão do SEI a lista oficial com o decreto vigente.</p>
+    <p>Use a sigla exatamente como cadastrada. Toque para copiar. <b>Tabela-modelo</b>: peça à gestão do SEI a lista oficial com o ato vigente.</p>
     <input class="fi" id="fUni" type="search" placeholder="Filtrar: saúde, educação, gabinete…">
     <div class="tw"><table id="tabUni">
       <thead><tr><th>Sigla</th><th>Unidade</th></tr></thead>
       <tbody></tbody>
     </table></div>
+  </section>
+
+  <section id="novidades" class="bloco">
+    <h2>Novidades da versão 5.0</h2>
+    <p>O SEI 5.0 trouxe melhorias de usabilidade, acessibilidade e desempenho, além de ajustes em pesquisa, editor de documentos e controle de prazos.</p>
+    <div class="warn">ℹ️ Cada órgão ativa os recursos no seu ritmo. <b>Confirme com a TI ou a gestão do SEI</b> o que já está liberado em Monte Santo de Minas antes de contar com uma novidade.</div>
   </section>
 
   <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
