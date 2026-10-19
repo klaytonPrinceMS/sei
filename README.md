@@ -60,5 +60,5 @@ python3 -m http.server 8000
 ## Personalizar
 
 - Textos e contatos: editar os arquivos `.html` (o bloco de navegação é idêntico nas 7 páginas — mantenha a ordem: Início, Aprender, Servidor, Externo, Sistema, Referência, Ajuda).
-- Tabelas dinâmicas: constantes `TIPOS`, `UNIDADES`, `MODELOS`, `ERROS`, `ATALHOS`, `ICONES` em `app.js`.
-- Cores e layout: variáveis `:root` em `styles.css` (responsivo + tema claro/escuro).
+- Tabelas dinâmicas: constantes `TIPOS`, `UNIDADES`, `MODELOS`, `ERROS`, `ATALHOS`, `ICONES` em `js/app.js`.
+- Cores e layout: variáveis `:root` em `css/styles.css` (responsivo + tema claro/escuro).
