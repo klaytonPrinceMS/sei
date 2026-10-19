@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Usuário externo — Guia SEI Monte Santo de Minas</title>
+<meta name="description" content="Cadastro externo, peticionamento, acompanhamento e conferência de documentos no SEI.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23363871'/><text x='50' y='68' font-size='48' text-anchor='middle' fill='%23fecd29' font-family='sans-serif' font-weight='bold'>S!</text></svg>">
+</head>
+<body data-page="externo">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">S!</div>
+      <div>
+        <div class="pre">Prefeitura de Monte Santo de Minas · MG</div>
+        <h1>🌐 Usuário externo</h1>
+        <p>Para cidadão, empresa e fornecedor: peticionar, assinar e acompanhar.</p>
+      </div>
+    </div>
+    <div class="topo-actions">
+      <button id="btnTema" class="btn ghost" type="button" aria-pressed="false">🌙 Tema escuro</button>
+      <button id="btnMenu" class="btn ghost only-mobile" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+    </div>
+  </div>
+</header>
+
+<nav id="nav" class="nav" aria-label="Navegação do guia">
+  <div class="wrap nav-in">
+    <a data-page="inicio" href="index.html">🏠 Início</a>
+    <a data-page="aprender" href="aprender.html">🚀 Aprender</a>
+    <a data-page="servidor" href="servidor.html">👤 Servidor</a>
+    <a data-page="externo" href="externo.html">🌐 Externo</a>
+    <a data-page="sistema" href="sistema.html">🖥️ Sistema</a>
+    <a data-page="referencia" href="referencia.html">📚 Referência</a>
+    <a data-page="ajuda" href="ajuda.html">🙋 Ajuda</a>
+  </div>
+</nav>
+
+<main id="conteudo" class="wrap">
+
+  <section class="busca" aria-label="Pesquisa nesta página">
+    <span aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="Pesquisar nesta página…" autocomplete="off">
+  </section>
+
+  <section id="externo" class="bloco">
+    <h2>Usuário externo — cidadão e empresa</h2>
+    <p>Para quem não é servidor: peticionar (enviar documentos), assinar contratos e acompanhar processos.</p>
+    <div class="grid cards-3">
+      <div class="card"><div class="ic">📝</div><h3>1. Cadastre-se</h3><p>Abra o <b>acesso externo</b>, clique em <b>“Clique aqui para se cadastrar”</b> e preencha os dados. Costumam ser solicitados RG, CPF e comprovante de endereço.</p><a class="btn" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0">Cadastrar / Entrar</a></div>
+      <div class="card"><div class="ic">🔍</div><h3>2. Acompanhe sem login</h3><p>Sem login, é possível consultar processos e documentos públicos.</p><a class="btn sec" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0">Pesquisa pública</a></div>
+      <div class="card"><div class="ic">🛡️</div><h3>3. Confira um documento</h3><p>Use o código verificador + CRC impressos no rodapé do documento.</p><a class="btn sec" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0">Conferir documento</a></div>
+    </div>
+    <details>
+      <summary><b>Gov.br x senha do SEI — qual usar?</b></summary>
+      <ul>
+        <li>O <b>gov.br</b> serve para <b>autenticar o login</b>.</li>
+        <li>A <b>assinatura</b> de documentos usa a <b>senha própria do SEI</b>, diferente da do gov.br.</li>
+        <li>Para assinar via gov.br, a conta precisa estar no nível <b>Prata ou Ouro</b>.</li>
+        <li>Esqueceu a senha? Na tela de acesso externo, clique em <b>Esqueci minha senha</b>.</li>
+      </ul>
+    </details>
+    <details>
+      <summary><b>Peticionamento: o que dá para fazer</b></summary>
+      <ul>
+        <li><b>Peticionamento novo:</b> iniciar um pedido/protocolo do zero.</li>
+        <li><b>Peticionamento intercorrente:</b> juntar documentos novos a um processo que já existe.</li>
+        <li>Envie PDFs legíveis, nomeados e, se possível, pesquisáveis (não só foto torta).</li>
+      </ul>
+    </details>
+    <div class="tip">📞 Precisa de ajuda com cadastro ou peticionamento? Gestão do SEI: <a href="mailto:sei@montesantodeminas.mg.gov.br">sei@montesantodeminas.mg.gov.br</a> · <a href="tel:+553535915128">(35) 3591-5128</a> (Klayton Prince). Envie documentos pessoais somente pelos canais oficiais.</div>
+  </section>
+
+  <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
+
+  <div class="pager">
+    <a href="servidor.html">← Servidor</a>
+    <a class="next" href="sistema.html">Sistema →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Guia SEI · Prefeitura de Monte Santo de Minas</b> em caso de divergência, prevalece a tela do seu sistema.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

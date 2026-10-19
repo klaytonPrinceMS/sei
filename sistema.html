@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sistema — Guia SEI Monte Santo de Minas</title>
+<meta name="description" content="Tela principal do SEI, extensão SEI Pro, tipos de processo e unidades.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23363871'/><text x='50' y='68' font-size='48' text-anchor='middle' fill='%23fecd29' font-family='sans-serif' font-weight='bold'>S!</text></svg>">
+</head>
+<body data-page="sistema">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">S!</div>
+      <div>
+        <div class="pre">Prefeitura de Monte Santo de Minas · MG</div>
+        <h1>🖥️ Sistema</h1>
+        <p>Tela principal, SEI Pro, tipos de processo e unidades.</p>
+      </div>
+    </div>
+    <div class="topo-actions">
+      <button id="btnTema" class="btn ghost" type="button" aria-pressed="false">🌙 Tema escuro</button>
+      <button id="btnMenu" class="btn ghost only-mobile" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+    </div>
+  </div>
+</header>
+
+<nav id="nav" class="nav" aria-label="Navegação do guia">
+  <div class="wrap nav-in">
+    <a data-page="inicio" href="index.html">🏠 Início</a>
+    <a data-page="aprender" href="aprender.html">🚀 Aprender</a>
+    <a data-page="servidor" href="servidor.html">👤 Servidor</a>
+    <a data-page="externo" href="externo.html">🌐 Externo</a>
+    <a data-page="sistema" href="sistema.html">🖥️ Sistema</a>
+    <a data-page="referencia" href="referencia.html">📚 Referência</a>
+    <a data-page="ajuda" href="ajuda.html">🙋 Ajuda</a>
+  </div>
+</nav>
+
+<main id="conteudo" class="wrap">
+
+  <section class="busca" aria-label="Pesquisa nesta página">
+    <span aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="Pesquisar nesta página…" autocomplete="off">
+  </section>
+
+  <section id="tela" class="bloco">
+    <h2>Conhecendo a tela principal</h2>
+    <p>Após o login, abre-se o <b>Controle de Processos</b>: à esquerda o menu, no topo a unidade e os atalhos, no centro os processos <b>Recebidos</b> e <b>Gerados</b>.</p>
+    <div class="grid cards-3">
+      <div class="card"><div class="ic">☰</div><h3>Menu lateral</h3><p>Iniciar Processo, Pesquisar, Blocos, Contatos, Acompanhamento Especial.</p></div>
+      <div class="card"><div class="ic">📥</div><h3>Recebidos x Gerados</h3><p>Recebidos = os que chegaram para a sua unidade. Gerados = os que a sua unidade criou.</p></div>
+      <div class="card"><div class="ic">👤</div><h3>Atribuição</h3><p>Marque quem é o responsável pelo processo dentro da unidade.</p></div>
+    </div>
+  </section>
+
+  <section id="pro" class="bloco">
+    <h2>Extensão SEI Pro (Chrome)</h2>
+    <div class="warn">⚠️ O SEI Pro <b>não é oficial</b> do SEI nem da Prefeitura. Só muda o visual no <b>seu</b> navegador. Antes de instalar em PC da Prefeitura, fale com a TI.</div>
+    <ol class="steps static">
+      <li>Abra a <b>Chrome Web Store</b> e pesquise <b>SEI Pro</b>.</li>
+      <li>Clique em <b>Usar no Chrome</b> e confirme.</li>
+      <li>Fixe o ícone na barra do navegador e entre no SEI.</li>
+      <li>Atualize (F5) e abra as <b>Configurações do SEI Pro</b> para ativar só o que precisa.</li>
+    </ol>
+  </section>
+
+  <section id="tipos" class="bloco">
+    <h2>Tipos de processo — exemplos comuns</h2>
+    <p>Lista de referência baseada em municípios que já usam o SEI. A tabela oficial de Monte Santo de Minas é definida pela gestão local — confirme antes de mapear um tipo novo.</p>
+    <input class="fi" id="fTip" type="search" placeholder="Filtrar: ofício, férias, contrato…">
+    <div class="tw"><table id="tabTip">
+      <thead><tr><th>Tipo de processo</th><th>Serve para</th><th>Acesso sugerido</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="unidades" class="bloco">
+    <h2>Unidades e siglas — modelo</h2>
+    <p>Use a sigla exatamente como cadastrada. Toque para copiar. <b>Tabela-modelo</b>: peça à gestão do SEI a lista oficial com o decreto vigente.</p>
+    <input class="fi" id="fUni" type="search" placeholder="Filtrar: saúde, educação, gabinete…">
+    <div class="tw"><table id="tabUni">
+      <thead><tr><th>Sigla</th><th>Unidade</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
+
+  <div class="pager">
+    <a href="externo.html">← Externo</a>
+    <a class="next" href="referencia.html">Referência →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Guia SEI · Prefeitura de Monte Santo de Minas</b> em caso de divergência, prevalece a tela do seu sistema.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

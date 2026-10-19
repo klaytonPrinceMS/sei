@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Servidor — Guia SEI Monte Santo de Minas</title>
+<meta name="description" content="Como conseguir acesso de servidor ao SEI da Prefeitura de Monte Santo de Minas.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23363871'/><text x='50' y='68' font-size='48' text-anchor='middle' fill='%23fecd29' font-family='sans-serif' font-weight='bold'>S!</text></svg>">
+</head>
+<body data-page="servidor">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">S!</div>
+      <div>
+        <div class="pre">Prefeitura de Monte Santo de Minas · MG</div>
+        <h1>👤 Servidor</h1>
+        <p>Como entrar no SEI e como pedir seu acesso.</p>
+      </div>
+    </div>
+    <div class="topo-actions">
+      <button id="btnTema" class="btn ghost" type="button" aria-pressed="false">🌙 Tema escuro</button>
+      <button id="btnMenu" class="btn ghost only-mobile" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+    </div>
+  </div>
+</header>
+
+<nav id="nav" class="nav" aria-label="Navegação do guia">
+  <div class="wrap nav-in">
+    <a data-page="inicio" href="index.html">🏠 Início</a>
+    <a data-page="aprender" href="aprender.html">🚀 Aprender</a>
+    <a data-page="servidor" href="servidor.html">👤 Servidor</a>
+    <a data-page="externo" href="externo.html">🌐 Externo</a>
+    <a data-page="sistema" href="sistema.html">🖥️ Sistema</a>
+    <a data-page="referencia" href="referencia.html">📚 Referência</a>
+    <a data-page="ajuda" href="ajuda.html">🙋 Ajuda</a>
+  </div>
+</nav>
+
+<main id="conteudo" class="wrap">
+
+  <section class="busca" aria-label="Pesquisa nesta página">
+    <span aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="Pesquisar nesta página…" autocomplete="off">
+  </section>
+
+  <section id="acesso-servidor" class="bloco">
+    <h2>Acesso ao SEI — Servidor</h2>
+    <div class="grid cards-2">
+      <div class="card">
+        <div class="ic">🔑</div><h3>Entrar no sistema</h3>
+        <p>Endereço oficial da Prefeitura:</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=ABC&sigla_sistema=SEI&infra_url=L3NlaS8=">Abrir o SEI de Monte Santo de Minas</a>
+      </div>
+      <div class="card">
+        <div class="ic">📝</div><h3>Ainda sem acesso?</h3>
+        <p>Leia o quadro <b>Indispensável</b> abaixo e peça via memorando da sua unidade.</p>
+        <a class="btn sec" href="#pedido">Ver como pedir</a>
+      </div>
+    </div>
+
+    <div class="must" id="pedido">
+      <h3>🚨 Indispensável: leia antes de pedir acesso</h3>
+      <p><b>Orientações para cadastro de servidores no SEI de Monte Santo de Minas.</b> Ajuste os detalhes conforme o decreto/portaria vigente no município.</p>
+      <ol>
+        <li><b>Base legal.</b> A liberação segue o ato municipal que regulamenta o SEI na Prefeitura. É preciso cumprir a norma e ter <b>indicação formal</b> da unidade.</li>
+        <li><b>Como pedir.</b> Solicitação formal por <b>memorando da unidade de lotação</b> do servidor.</li>
+        <li><b>Quem assina.</b> O memorando precisa ser <b>assinado no SEI pelo(a) Secretário(a)</b> ou chefia responsável.</li>
+        <li><b>Troca de unidade.</b> Mudança de lotação ou ajuste de acessos = novo memorando.</li>
+        <li><b>Dados obrigatórios:</b> nome completo, CPF, e-mail institucional, celular e unidade/sigla de lotação.</li>
+        <li><b>Sem acesso ao SEI?</b> Peça a um superior que já tenha acesso para encaminhar.</li>
+        <li><b>Envie o número do processo</b> ao setor responsável após protocolar o pedido — não mande documentos soltos.</li>
+      </ol>
+      <div class="tip">💡 Envie CPF e dados pessoais somente dentro do SEI, nunca em grupos ou mensagens abertas.</div>
+      <div class="tip">📞 Dúvidas sobre o pedido? Gestão do SEI: <a href="mailto:sei@montesantodeminas.mg.gov.br">sei@montesantodeminas.mg.gov.br</a> · <a href="tel:+553535915128">(35) 3591-5128</a> (Klayton Prince).</div>
+    </div>
+
+    <h3>Modelo de memorando de solicitação de acesso</h3>
+    <details open>
+      <summary>Memorando · cadastro / liberação de acesso ao SEI</summary>
+      <pre id="modAcesso">Assunto: Solicitação de cadastro/liberação de acesso ao SEI
+
+Prezado(a) [Nome/Cargo do setor responsável],
+
+Solicitamos o cadastro de acesso ao Sistema Eletrônico de Informações (SEI) para o(a) servidor(a)/colaborador(a) abaixo, conforme ato municipal vigente:
+
+Nome completo: [Nome]
+CPF: [000.000.000-00]
+E-mail institucional: [nome@montesantodeminas.mg.gov.br]
+Celular: [(35) 90000-0000]
+Unidade de lotação / sigla: [Ex.: SMS-UBS CENTRO]
+Cargo/Função: [Cargo]
+
+Declaramos que as informações são verdadeiras e que o(a) servidor(a) foi orientado(a) sobre o uso do SEI e a proteção de dados (LGPD).
+
+Atenciosamente,
+[Nome do(a) Secretário(a)]
+[Cargo] — [Unidade]</pre>
+      <div class="row"><button class="btn" id="btnCopiarMem" type="button">📋 Copiar texto</button><span class="muted" id="memMsg"></span></div>
+    </details>
+    <p class="tip">Com o acesso em mãos, siga para <a href="aprender.html#jornada">Aprender → jornada do zero ao envio</a>.</p>
+  </section>
+
+  <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
+
+  <div class="pager">
+    <a href="aprender.html">← Aprender</a>
+    <a class="next" href="externo.html">Externo →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Guia SEI · Prefeitura de Monte Santo de Minas</b> em caso de divergência, prevalece a tela do seu sistema.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

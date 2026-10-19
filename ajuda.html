@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ajuda — Guia SEI Monte Santo de Minas</title>
+<meta name="description" content="Canais de ajuda do SEI: tutoriais, manual oficial e site da Prefeitura.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23363871'/><text x='50' y='68' font-size='48' text-anchor='middle' fill='%23fecd29' font-family='sans-serif' font-weight='bold'>S!</text></svg>">
+</head>
+<body data-page="ajuda">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">S!</div>
+      <div>
+        <div class="pre">Prefeitura de Monte Santo de Minas · MG</div>
+        <h1>🙋 Ajuda</h1>
+        <p>Canais de suporte, tutoriais e como pedir ajuda da forma correta.</p>
+      </div>
+    </div>
+    <div class="topo-actions">
+      <button id="btnTema" class="btn ghost" type="button" aria-pressed="false">🌙 Tema escuro</button>
+      <button id="btnMenu" class="btn ghost only-mobile" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+    </div>
+  </div>
+</header>
+
+<nav id="nav" class="nav" aria-label="Navegação do guia">
+  <div class="wrap nav-in">
+    <a data-page="inicio" href="index.html">🏠 Início</a>
+    <a data-page="aprender" href="aprender.html">🚀 Aprender</a>
+    <a data-page="servidor" href="servidor.html">👤 Servidor</a>
+    <a data-page="externo" href="externo.html">🌐 Externo</a>
+    <a data-page="sistema" href="sistema.html">🖥️ Sistema</a>
+    <a data-page="referencia" href="referencia.html">📚 Referência</a>
+    <a data-page="ajuda" href="ajuda.html">🙋 Ajuda</a>
+  </div>
+</nav>
+
+<main id="conteudo" class="wrap">
+
+  <section class="busca" aria-label="Pesquisa nesta página">
+    <span aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="Pesquisar nesta página…" autocomplete="off">
+  </section>
+
+  <section id="ajuda" class="bloco">
+    <h2>Em caso de dúvidas</h2>
+    <div class="must blue">
+      <h3>🙋 Procure a equipe do SEI na Prefeitura de Monte Santo de Minas</h3>
+      <p>Não achou aqui? Informe sempre: <b>número do processo</b>, <b>o que você clicou</b> e a <b>mensagem de erro</b>. Nunca envie CPF ou dado sensível em grupos.</p>
+    </div>
+    <div class="grid cards-2">
+      <div class="card"><div class="ic">✉️</div><h3>E-mail da gestão do SEI</h3><p><a href="mailto:sei@montesantodeminas.mg.gov.br">sei@montesantodeminas.mg.gov.br</a></p><p class="muted">Canal oficial para dúvidas e solicitações.</p></div>
+      <div class="card"><div class="ic">📞</div><h3>Telefone</h3><p><a href="tel:+553535915128">(35) 3591-5128</a> — Klayton Prince</p><p class="muted">Gestão do SEI · Prefeitura de Monte Santo de Minas</p></div>
+    </div>
+    <div class="grid cards-3">
+      <div class="card"><div class="ic">🎬</div><h3>Tutoriais SEI</h3><p>Playlist oficial com passo a passo.</p><p><a class="btn sec" target="_blank" rel="noopener" href="https://youtube.com/playlist?list=PLpPGbI2fk_PaAMpu7xxyfFIkchnaknXe1">Assistir</a></p></div>
+      <div class="card"><div class="ic">📘</div><h3>Manual oficial</h3><p>Manual do Processo Eletrônico Nacional.</p><p><a class="btn sec" target="_blank" rel="noopener" href="https://manuais.processoeletronico.gov.br/pt-br/latest/SEI/index.html">Abrir manual</a></p></div>
+      <div class="card"><div class="ic">🏛️</div><h3>Site da Prefeitura</h3><p>Canal oficial do município.</p><p><a class="btn sec" target="_blank" rel="noopener" href="https://www.montesantodeminas.mg.gov.br/">Acessar site</a></p></div>
+    </div>
+    <h3>Sugestão de melhoria?</h3>
+    <p>Anote qual processo, qual etapa e o que atrapalha — quanto mais específico, mais fácil será melhorar. Leve à gestão do SEI da sua secretaria.</p>
+  </section>
+
+  <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
+
+  <div class="pager">
+    <a href="referencia.html">← Referência</a>
+    <a class="next" href="index.html">Início →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Guia SEI · Prefeitura de Monte Santo de Minas</b> em caso de divergência, prevalece a tela do seu sistema.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

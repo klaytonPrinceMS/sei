@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Referência — Guia SEI Monte Santo de Minas</title>
+<meta name="description" content="Níveis de acesso, ícones, atalhos, modelos de texto e solução de erros no SEI.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23363871'/><text x='50' y='68' font-size='48' text-anchor='middle' fill='%23fecd29' font-family='sans-serif' font-weight='bold'>S!</text></svg>">
+</head>
+<body data-page="referencia">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">S!</div>
+      <div>
+        <div class="pre">Prefeitura de Monte Santo de Minas · MG</div>
+        <h1>📚 Referência</h1>
+        <p>Níveis de acesso, ícones, atalhos, modelos prontos e solução de erros.</p>
+      </div>
+    </div>
+    <div class="topo-actions">
+      <button id="btnTema" class="btn ghost" type="button" aria-pressed="false">🌙 Tema escuro</button>
+      <button id="btnMenu" class="btn ghost only-mobile" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+    </div>
+  </div>
+</header>
+
+<nav id="nav" class="nav" aria-label="Navegação do guia">
+  <div class="wrap nav-in">
+    <a data-page="inicio" href="index.html">🏠 Início</a>
+    <a data-page="aprender" href="aprender.html">🚀 Aprender</a>
+    <a data-page="servidor" href="servidor.html">👤 Servidor</a>
+    <a data-page="externo" href="externo.html">🌐 Externo</a>
+    <a data-page="sistema" href="sistema.html">🖥️ Sistema</a>
+    <a data-page="referencia" href="referencia.html">📚 Referência</a>
+    <a data-page="ajuda" href="ajuda.html">🙋 Ajuda</a>
+  </div>
+</nav>
+
+<main id="conteudo" class="wrap">
+
+  <section class="busca" aria-label="Pesquisa nesta página">
+    <span aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="Pesquisar nesta página…" autocomplete="off">
+  </section>
+
+  <section id="niveis" class="bloco">
+    <h2>Níveis de acesso</h2>
+    <div class="grid cards-3">
+      <div class="card"><div class="ic">🌍</div><h3>Público</h3><p>Visível a todos os usuários e na pesquisa pública.</p></div>
+      <div class="card"><div class="ic">🔓</div><h3>Restrito</h3><p>Só as unidades por onde tramita. Exige hipótese legal (ex.: LGPD, dados pessoais).</p></div>
+      <div class="card"><div class="ic">🛡️</div><h3>Sigiloso</h3><p>Só usuários credenciados nominalmente. Uso excepcional.</p></div>
+    </div>
+    <div class="warn">⚠️ CPF, prontuário, endereço, dados de saúde e informações pessoais → normalmente <b>Restrito</b>. Na dúvida, pergunte à chefia ou à gestão do SEI.</div>
+  </section>
+
+  <section id="icones" class="bloco">
+    <h2>Guia de ícones e cores</h2>
+    <input class="fi" id="fIco" type="search" placeholder="Filtrar ícone: enviar, assinar, bloco…">
+    <div class="tw"><table id="tabIco">
+      <thead><tr><th>Ícone</th><th>Ação</th><th>O que faz</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="atalhos" class="bloco">
+    <h2>Teclas de atalho</h2>
+    <p>Dica: <kbd>ALT+F1</kbd> mostra todos os atalhos dentro do SEI.</p>
+    <div class="tw"><table id="tabAtl">
+      <thead><tr><th>Grupo</th><th>Teclas</th><th>Ação</th></tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section id="modelos" class="bloco">
+    <h2>Modelos de texto prontos</h2>
+    <p>Copie, cole no editor do SEI com <kbd>CTRL+SHIFT+V</kbd> (colar sem formatação) e troque o que está entre [colchetes]. O SEI coloca o cabeçalho sozinho.</p>
+    <input class="fi" id="fMod" type="search" placeholder="Filtrar modelo: memorando, ofício, despacho…">
+    <div id="modList"></div>
+  </section>
+
+  <section id="erros" class="bloco">
+    <h2>Deu erro? Veja o que fazer</h2>
+    <input class="fi" id="fErr" type="search" placeholder="Filtrar: assinar, anexo, sumiu, enviei errado…">
+    <div id="errList"></div>
+    <div class="warn">Se nada resolver, anote <b>o número do processo</b>, <b>o que clicou</b> e a <b>mensagem exibida</b> e procure a equipe do SEI (<a href="ajuda.html">ver canais</a>).</div>
+  </section>
+
+  <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
+
+  <div class="pager">
+    <a href="sistema.html">← Sistema</a>
+    <a class="next" href="ajuda.html">Ajuda →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Guia SEI · Prefeitura de Monte Santo de Minas</b> em caso de divergência, prevalece a tela do seu sistema.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

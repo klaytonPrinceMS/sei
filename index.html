@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guia SEI — Prefeitura de Monte Santo de Minas</title>
+<meta name="description" content="Guia prático do SEI para servidores e cidadãos da Prefeitura de Monte Santo de Minas: acesso, processos, assinatura, envio, peticionamento e ajuda.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23363871'/><text x='50' y='68' font-size='48' text-anchor='middle' fill='%23fecd29' font-family='sans-serif' font-weight='bold'>S!</text></svg>">
+</head>
+<body data-page="inicio">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">S!</div>
+      <div>
+        <div class="pre">Prefeitura de Monte Santo de Minas · MG</div>
+        <h1>Guia Prático do SEI</h1>
+        <p>Aprenda a iniciar, assinar e enviar processos do zero, em poucos cliques. Sistema Eletrônico de Informações · SEI 5.0</p>
+      </div>
+    </div>
+    <div class="topo-actions">
+      <button id="btnTema" class="btn ghost" type="button" aria-pressed="false">🌙 Tema escuro</button>
+      <button id="btnMenu" class="btn ghost only-mobile" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+    </div>
+  </div>
+</header>
+
+<nav id="nav" class="nav" aria-label="Navegação do guia">
+  <div class="wrap nav-in">
+    <a data-page="inicio" href="index.html">🏠 Início</a>
+    <a data-page="aprender" href="aprender.html">🚀 Aprender</a>
+    <a data-page="servidor" href="servidor.html">👤 Servidor</a>
+    <a data-page="externo" href="externo.html">🌐 Externo</a>
+    <a data-page="sistema" href="sistema.html">🖥️ Sistema</a>
+    <a data-page="referencia" href="referencia.html">📚 Referência</a>
+    <a data-page="ajuda" href="ajuda.html">🙋 Ajuda</a>
+  </div>
+</nav>
+
+<main id="conteudo" class="wrap">
+
+  <section class="busca" aria-label="Pesquisa nesta página">
+    <span aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="Pesquisar nesta página…" autocomplete="off">
+  </section>
+
+  <section id="acessos" class="bloco destaque">
+    <h2>Acesso rápido — SEI Monte Santo de Minas</h2>
+    <p>Use sempre os endereços oficiais abaixo. Salve nos favoritos.</p>
+    <div class="grid cards-4">
+      <article class="card acesso">
+        <div class="ic">🔑</div>
+        <h3>SEI — Servidor</h3>
+        <p>Acesso interno da Prefeitura com login e senha do servidor.</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=ABC&sigla_sistema=SEI&infra_url=L3NlaS8=">Abrir SEI Servidor</a>
+        <button class="btn sec copiar" data-url="https://montesantodeminas.sei.mg.gov.br/sip/login.php?sigla_orgao_sistema=ABC&sigla_sistema=SEI&infra_url=L3NlaS8=" type="button">📋 Copiar link</button>
+      </article>
+      <article class="card acesso">
+        <div class="ic">🌐</div>
+        <h3>SEI — Usuário Externo</h3>
+        <p>Para cidadão, empresa e fornecedor: peticionamento e acompanhamento.</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0">Abrir acesso externo</a>
+        <button class="btn sec copiar" data-url="https://montesantodeminas.sei.mg.gov.br/sei/controlador_externo.php?acao=usuario_externo_logar&id_orgao_acesso_externo=0" type="button">📋 Copiar link</button>
+      </article>
+      <article class="card acesso">
+        <div class="ic">🔍</div>
+        <h3>Pesquisa Pública</h3>
+        <p>Consultar processos e documentos públicos sem login.</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0">Pesquisar processo</a>
+        <button class="btn sec copiar" data-url="https://montesantodeminas.sei.mg.gov.br/sei/modulos/pesquisa/md_pesq_processo_pesquisar.php?acao_externa=protocolo_pesquisar&acao_origem_externa=protocolo_pesquisar&id_orgao_acesso_externo=0" type="button">📋 Copiar link</button>
+      </article>
+      <article class="card acesso">
+        <div class="ic">🛡️</div>
+        <h3>Conferir Documento</h3>
+        <p>Verificar autenticidade pelo código verificador + CRC.</p>
+        <a class="btn" target="_blank" rel="noopener" href="https://montesantodeminas.sei.mg.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0">Conferir autenticidade</a>
+        <button class="btn sec copiar" data-url="https://montesantodeminas.sei.mg.gov.br/sei/controlador_externo.php?acao=documento_conferir&id_orgao_acesso_externo=0" type="button">📋 Copiar link</button>
+      </article>
+    </div>
+    <p class="muted" id="copyMsg" role="status" aria-live="polite"></p>
+  </section>
+
+  <section id="comecar" class="bloco">
+    <h2>Comece por aqui</h2>
+    <p>Escolha seu caminho — cada cartão leva à página correspondente.</p>
+    <div class="grid">
+      <a class="card q" href="aprender.html#jornada"><div class="ic">🚀</div><h3>Nunca usei o SEI</h3><p>Siga a jornada do zero ao envio, passo a passo.</p></a>
+      <a class="card q" href="servidor.html#pedido"><div class="ic">🔑</div><h3>Não tenho acesso</h3><p>Veja como pedir cadastro de servidor.</p></a>
+      <a class="card q" href="externo.html"><div class="ic">🌐</div><h3>Sou cidadão / empresa</h3><p>Cadastro externo, peticionamento e assinatura.</p></a>
+      <a class="card q" href="referencia.html#erros"><div class="ic">🆘</div><h3>Deu erro</h3><p>Soluções para os problemas mais comuns.</p></a>
+      <a class="card q" href="aprender.html#qual"><div class="ic">🧭</div><h3>Qual processo eu uso?</h3><p>Responda 2 perguntas e descubra o tipo certo.</p></a>
+      <a class="card q" href="referencia.html#modelos"><div class="ic">📋</div><h3>Modelos prontos</h3><p>Textos para copiar e colar no editor do SEI.</p></a>
+    </div>
+  </section>
+
+  <section id="atalhos-paginas" class="bloco">
+    <h2>Explore o guia</h2>
+    <div class="grid cards-3">
+      <a class="card q" href="aprender.html"><div class="ic">🚀</div><h3>Aprender</h3><p>Jornada do zero ao envio, checklist e assistente de processo.</p></a>
+      <a class="card q" href="referencia.html"><div class="ic">📚</div><h3>Referência</h3><p>Níveis de acesso, ícones, atalhos, modelos e erros.</p></a>
+      <a class="card q" href="sistema.html"><div class="ic">🖥️</div><h3>Sistema</h3><p>Tela principal, SEI Pro, tipos de processo e unidades.</p></a>
+    </div>
+    <p>Precisa falar com a equipe? <a href="ajuda.html">Ver canais de ajuda →</a></p>
+    <p class="tip">📞 Gestão do SEI: <a href="mailto:sei@montesantodeminas.mg.gov.br">sei@montesantodeminas.mg.gov.br</a> · <a href="tel:+553535915128">(35) 3591-5128</a> (Klayton Prince)</p>
+  </section>
+
+  <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
+
+  <div class="pager">
+    <a href="ajuda.html">← Ajuda</a>
+    <a class="next" href="aprender.html">Aprender →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Guia SEI · Prefeitura de Monte Santo de Minas</b> em caso de divergência, prevalece a tela do seu sistema.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

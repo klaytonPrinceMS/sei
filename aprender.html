@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aprender — Guia SEI Monte Santo de Minas</title>
+<meta name="description" content="Jornada do zero ao envio, checklist e assistente de tipo de processo no SEI.">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23363871'/><text x='50' y='68' font-size='48' text-anchor='middle' fill='%23fecd29' font-family='sans-serif' font-weight='bold'>S!</text></svg>">
+</head>
+<body data-page="aprender">
+<a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="wrap topo-in">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">S!</div>
+      <div>
+        <div class="pre">Prefeitura de Monte Santo de Minas · MG</div>
+        <h1>🚀 Aprender</h1>
+        <p>Jornada do zero ao envio, checklist e assistente de tipo de processo.</p>
+      </div>
+    </div>
+    <div class="topo-actions">
+      <button id="btnTema" class="btn ghost" type="button" aria-pressed="false">🌙 Tema escuro</button>
+      <button id="btnMenu" class="btn ghost only-mobile" type="button" aria-expanded="false" aria-controls="nav">☰ Menu</button>
+    </div>
+  </div>
+</header>
+
+<nav id="nav" class="nav" aria-label="Navegação do guia">
+  <div class="wrap nav-in">
+    <a data-page="inicio" href="index.html">🏠 Início</a>
+    <a data-page="aprender" href="aprender.html">🚀 Aprender</a>
+    <a data-page="servidor" href="servidor.html">👤 Servidor</a>
+    <a data-page="externo" href="externo.html">🌐 Externo</a>
+    <a data-page="sistema" href="sistema.html">🖥️ Sistema</a>
+    <a data-page="referencia" href="referencia.html">📚 Referência</a>
+    <a data-page="ajuda" href="ajuda.html">🙋 Ajuda</a>
+  </div>
+</nav>
+
+<main id="conteudo" class="wrap">
+
+  <section class="busca" aria-label="Pesquisa nesta página">
+    <span aria-hidden="true">🔎</span>
+    <input id="q" type="search" placeholder="Pesquisar nesta página…" autocomplete="off">
+  </section>
+
+  <section id="jornada" class="bloco">
+    <h2>Sua jornada: do zero ao envio</h2>
+    <p>Toque em cada passo para marcar como feito. Vale para Memorando, Ofício e a maioria dos processos.</p>
+    <div class="bar"><i id="pbJor"></i></div>
+    <p class="muted" id="pbJorTxt">0 de 8 concluídos</p>
+    <ol class="steps" id="jorList">
+      <li><b>Entre no SEI</b> — use o link “SEI — Servidor” na <a href="index.html#acessos">página inicial</a>. Confira a unidade no topo (troque com ALT+F11 se tiver mais de uma).</li>
+      <li><b>Inicie o processo</b> — menu <i>Iniciar Processo</i> → escolha o tipo (ex.: PA - Informações para Memorando/Ofício) → preencha especificação, interessados e nível de acesso.</li>
+      <li><b>Inclua o documento</b> — <i>Incluir Documento</i> → escolha Memorando, Ofício etc. → preencha o texto no editor.</li>
+      <li><b>Anexe PDFs se preciso</b> — <i>Incluir Documento → Externo</i> → tipo, data, formato PDF e nível de acesso, com arquivo legível.</li>
+      <li><b>Assine</b> — selecione o documento → <i>Assinar</i> → confira o cargo e a função → digite a senha do SEI.</li>
+      <li><b>Confira o checklist</b> — título claro, acesso correto, documentos assinados, destinatários (<a href="#checklist">ver checklist abaixo</a>).</li>
+      <li><b>Envie</b> — selecione o processo → <i>Enviar Processo</i> → escolha a unidade de destino → marque “manter processo aberto” só se ainda for trabalhar nele.</li>
+      <li><b>Acompanhe</b> — use <i>Pesquisar</i>, <i>Acompanhamento Especial</i> e <i>Histórico</i> para saber onde ele está.</li>
+    </ol>
+    <div class="tip">💡 Memorando e Ofício geralmente usam o tipo <b>PA - Informações</b>. Confirme a tabela em <a href="sistema.html#tipos">Sistema → Tipos</a>.</div>
+  </section>
+
+  <section id="checklist" class="bloco">
+    <h2>Checklist antes de enviar</h2>
+    <div class="bar"><i id="pbChk"></i></div>
+    <p class="muted" id="pbChkTxt">0 de 7 conferidos</p>
+    <div class="ck" id="ckList">
+      <label><input type="checkbox"> Especificação (título) clara e sem erros</label>
+      <label><input type="checkbox"> Nível de acesso correto (dados pessoais = Restrito)</label>
+      <label><input type="checkbox"> Todos os documentos estão na árvore do processo</label>
+      <label><input type="checkbox"> Documentos gerados no SEI estão assinados</label>
+      <label><input type="checkbox"> Anexos externos em PDF, legíveis e nomeados</label>
+      <label><input type="checkbox"> Interessados e unidade de destino corretos</label>
+      <label><input type="checkbox"> Sem CPF, endereço ou dado sensível exposto em local público</label>
+    </div>
+  </section>
+
+  <section id="qual" class="bloco">
+    <h2>Qual processo eu uso?</h2>
+    <p>Responda e o guia sugere o tipo, o documento e o nível de acesso. Valores de exemplo — confirme com a gestão local.</p>
+    <div id="wiz"></div>
+  </section>
+
+  <div id="noResult" class="empty" hidden>Nada encontrado nesta página 🤔 Tente outra palavra ou use o menu acima.</div>
+
+  <div class="pager">
+    <a href="index.html">← Início</a>
+    <a class="next" href="servidor.html">Servidor →</a>
+  </div>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><b>Guia SEI · Prefeitura de Monte Santo de Minas</b> em caso de divergência, prevalece a tela do seu sistema.</p>
+  </div>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>
