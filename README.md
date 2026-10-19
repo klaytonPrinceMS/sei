@@ -9,7 +9,7 @@ Site estático multi-página em HTML + CSS + JS puro, sem dependências, publica
 
 - **7 páginas:** Início, Aprender, Servidor, Externo, Sistema, Referência e Ajuda, com navegação anterior/próxima em cadeia circular.
 - **Tema claro como padrão**, com alternância para o tema escuro (escolha salva no navegador).
-- **Paleta oficial** do site da Prefeitura (https://montesantodeminas.mg.gov.br/): azul `#0095eb`, índigo `#363871`, amarelo `#fecd29`.
+- **Paleta do brasão municipal**: azul-marinho `#232A68`, índigo `#363871`, amarelo-ouro `#fecd29`.
 - **Responsivo:** menu hambúrguer no celular, busca com filtro em todas as páginas.
 - **Interativo:** jornada e checklist com barra de progresso salva, assistente “qual processo eu uso?”, tabelas com filtro, modelos de texto com botão copiar.
 - Conteúdo de referência adaptado de https://guipaicheco.github.io/SEI/.
